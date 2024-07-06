@@ -21,8 +21,11 @@ jobs:
                 registry: ${{ env.REGISTRY }}
                 username: ${{ github.actor }}
                 password: ${{ secrets.GITHUB_TOKEN }}
+            - name: Lowercase the tag
+              run: |
+                echo "IMAGE_ROOT=${REGISTRY@L}/${IMAGE_NAME@L}" >> $GITHUB_ENV
             - name: Build the Docker image
               uses: docker/build-push-action@v6
               with:
                 push: true
-                tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}, ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+                tags: ${{ env.IMAGE_ROOT }}:${{ github.ref_name }}, ${{ env.IMAGE_ROOT }}:latest
