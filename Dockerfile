@@ -17,6 +17,9 @@ RUN source "$HOME/.sdkman/bin/sdkman-init.sh" \
     && git clone https://github.com/uclid-org/uclid.git \
     && cd /uclid && sbt update clean compile "set fork:=true" && sbt universal:packageBin
 
+VOLUME /uclid
+WORKDIR /uclid
+
 # Download from release https://github.com/uclid-org/uclid/releases/download/v0.9.5d-prerelease/uclid-0.9.5.zip
 # RUN curl -LO https://github.com/uclid-org/uclid/releases/download/v0.9.5d-prerelease/uclid-0.9.5.zip
 RUN unzip /uclid/target/universal/uclid-0.9.5.zip -d /uclid
