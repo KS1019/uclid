@@ -1,12 +1,16 @@
 # uclid
 
-UCLID5 is a modeling, formal verification, sythesis tool. This repository provides Docker Image to run UCLID5 with ease.
+UCLID5 is a modeling, formal verification, sythesis tool. This repository provides Docker Image to run UCLID5 with ease. This is not an official image by any means and is not related to the original authors of UCLID.
 
 ## Run UCLID5
 
 ```sh
 docker run --rm -v $PWD:/src ghcr.io/ks1019/uclid:latest <your_file>.ucl
 ```
+
+## LICENSE
+
+This repository is under MIT LICENSE but contains the products that may be under different licenses from the other authors.
 
 ## References
 
