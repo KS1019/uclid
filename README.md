@@ -21,3 +21,5 @@ This repository is under MIT LICENSE but contains the products that may be under
 
 - Sanjit A. Seshia and Pramod Subramanyan. <font color="blue">UCLID5: Integrating Modeling, Verification, Synthesis and Learning.</font> [\[HTML\]](https://people.eecs.berkeley.edu/~sseshia/pubs/b2hd-seshia-memocode18.html)
 *Proceedings of the 16th ACM-IEEE International Conference on Formal Methods and Models for System Design (MEMOCODE 2018)*, Beijing, China. October 2018.
+
+- [Z3Prover/z3: The Z3 Theorem Prover](https://github.com/Z3Prover/z3?tab=License-1-ov-file#readme)
